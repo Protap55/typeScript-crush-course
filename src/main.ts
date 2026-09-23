@@ -116,7 +116,108 @@
 
 // console.log(ReletionShip.married);
 
-function name(params: string) {
-  return params.toUpperCase();
+// function name(params: string) {
+//   return params.toUpperCase();
+// }
+// console.log(name("protap"));
+
+// class Student {
+//   name: string;
+//   age: number;
+//   constructor(name: string, age: number) {
+//     this.name = name;
+//     this.age = age;
+//   }
+// }
+
+// const students = new Student("Sabbir", 28);
+// const studentst = new Student("Rakib", 25);
+// console.log(students);
+// console.log(studentst);
+
+// let x: number = 1;
+// switch (true) {
+//   case x > 5:
+//     console.log("success");
+//     break;
+
+//   default:
+//     console.log("fail");
+//     break;
+// }
+
+// type familyMember = {
+//   names: string;
+// };
+
+// const member: familyMember = {
+//   names: "30",
+// };
+// console.log(member);
+
+// class person {
+//   names: string;
+//   age: number;
+//   address?: string;
+//   constructor(names: string, age: number) {
+//     this.names = names;
+//     this.age = age;
+//   }
+// }
+
+// console.log(new person("Prokash", 30));
+
+// class matchMember {
+//   nam: string;
+//   age: number;
+//   address: string;
+//   constructor(nam: string, age: number, address: string) {
+//     this.nam = nam;
+//     this.age = age;
+//     this.address = address;
+//   }
+// }
+// const member = new matchMember("Protap", 28, "Dhaka");
+// class members extends matchMember {
+//   qualification: string;
+//   constructor(
+//     nam: string,
+//     age: number,
+//     address: string,
+//     qualification: string,
+//   ) {
+//     super(nam, age, address);
+//     this.qualification = qualification;
+//   }
+// }
+// const mem = new members("Rajib", 35, "Dilli", "Civil");
+// console.log(member.nam);
+// console.log(mem);
+
+// interface stu {
+//   nam: string;
+//   age: number;
+// }
+
+// class student implements stu {
+//   nam: string;
+//   age: number;
+//   constructor(nam: string, age: number) {
+//     this.nam = nam;
+//     this.age = age;
+//   }
+// }
+// const h = new student("p", 12);
+// console.log(h);
+
+interface stu {
+  nam: string;
+  age: number;
 }
-console.log(name("protap"));
+
+class student implements stu {
+  nam: string = "Protap";
+  age: number = 28;
+}
+const sg = new student();
+console.log(sg);
