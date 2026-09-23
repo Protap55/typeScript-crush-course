@@ -85,25 +85,38 @@
 //   qualification: string;
 // };
 
-interface User {
-  name: string;
-  age: number;
-  address: string;
-  isJobsHolder: boolean;
-  qualification: string;
-}
-interface Relationship extends User {
-  status: string;
-}
-const studentInfo: Relationship = {
-  name: "Protap dutta",
-  age: 28,
-  address: "Dhaka",
-  isJobsHolder: false,
-  qualification: "Civil engineering",
-  status: "single",
-};
+// interface User {
+//   name: string;
+//   age: number;
+//   address: string;
+//   isJobsHolder: boolean;
+//   qualification: string;
+// }
+// interface Relationship extends User {
+//   status: string;
+// }
+// const studentInfo: Relationship = {
+//   name: "Protap dutta",
+//   age: 28,
+//   address: "Dhaka",
+//   isJobsHolder: false,
+//   qualification: "Civil engineering",
+//   status: "single",
+// };
 
-studentInfo.age = 29;
+// studentInfo.age = 29;
 
-console.log(studentInfo);
+// console.log(studentInfo);
+
+// enum ReletionShip {
+//   single = "Single",
+//   married = "Married",
+//   divoced = "Divorce",
+// }
+
+// console.log(ReletionShip.married);
+
+function name(params: string) {
+  return params.toUpperCase();
+}
+console.log(name("protap"));
